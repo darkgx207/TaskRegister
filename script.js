@@ -1,6 +1,8 @@
 const entryf = document.querySelector('.entry');
 const submitb = document.querySelector('.submitbtn');
-let nitem = document.querySelector('.ntask').childElementCount;
+const focus = document.querySelector('.ntask');
+let nitem =focus.childElementCount;
+let storage = [];
 
 function memory(x){
     entryf.value = '';
@@ -24,10 +26,11 @@ function addbtn() {
     submitb.addEventListener('click',adding);
     entryf.addEventListener('keypress',(e)=>{
         if(e.key === 'Enter') adding();
-    }
-    
-    );
-}
+})}
+
+
+
 
 addbtn();
+
 

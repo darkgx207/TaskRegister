@@ -62,6 +62,10 @@ li:hover {
     background-color: lightseagreen;
     cursor: default;
 }
+.selected {
+    background-color: lightblue;
+    color:blueviolet;
+}
 .zoom {
     display: none;
     position: absolute;
